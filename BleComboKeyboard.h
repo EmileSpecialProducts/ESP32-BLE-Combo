@@ -108,7 +108,7 @@ typedef struct
   uint8_t reserved;
   uint8_t keys[6];
 } KeyReport;
-
+#endif
 enum BLEConnectionMode {KEYBOARD_MEDIA_MOUSE_MODE, MEDIA_MODE};
 
 class BleComboKeyboard : public Print
