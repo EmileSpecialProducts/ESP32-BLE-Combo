@@ -3,8 +3,12 @@
 #include "sdkconfig.h"
 #if defined(CONFIG_BT_ENABLED)
 
+#if CONFIG_TINYUSB_HID_ENABLED
 #include "class/hid/hid.h"
 #include "class/hid/hid_device.h"
+#else 
+#include "hidKeys.h"
+#endif
 
 #include "BleConnectionStatus.h"
 #include "BLEHIDDevice.h"
